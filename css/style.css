@@ -267,6 +267,7 @@ header {
     /* background-blend-mode: multiply; */
     color: var(--clr-light);
     text-align: center;
+    
 }
 .section__title--skills
 {
@@ -325,7 +326,11 @@ ul{
     opacity: .75;
 }
 
-
+.my-newsletter
+{
+    max-width: 600px;
+    margin: 0 auto;
+}
 
 /* footer*/
 .footer {
@@ -371,19 +376,3 @@ ul{
 .social-list__link {
     padding: .5em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
