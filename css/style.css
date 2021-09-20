@@ -311,7 +311,7 @@ ul{
 
 .portfolio__item {
     background: var(--clr-dark);
-    color: var(--clr-light)
+    color: var(--clr-light);
     overflow: hidden;
 }
 
