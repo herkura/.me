@@ -330,6 +330,7 @@ ul{
 {
     max-width: 650px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 /* footer*/
@@ -363,18 +364,19 @@ ul{
 
 .social-list {
     list-style: none;
-    display: flex;
+    display:flex;
     justify-content: center;
     margin: 2.5em 0;
     padding: 0;
 }
 
 .social-list__item {
-    margin: 0 .2em;
+    margin: 0.2em;
+    justify-content: center;
 }
 
 .social-list__link {
-    padding: .5em;
+    padding: .6em;
 }
 
 
