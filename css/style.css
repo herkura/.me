@@ -371,12 +371,15 @@ ul{
     justify-content: center;
     margin: 2.5em 0;
     padding: 0;
-    
+    padding-right: 100px;
+    padding-left: 90px;
 }
 
 .social-list__item {
     margin: 0.2em;
     justify-content: center;
+    
+    
   
 }
 
