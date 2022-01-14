@@ -451,11 +451,11 @@ ul{
  
  .timeline-content span {
     font-size: 15px;
-    color: #a4a4a4;
+    color:black;
  }
  
  .timeline-content p {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.5em;
     word-spacing: 1px;
     color: rgb(0, 0, 0);
