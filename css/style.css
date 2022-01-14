@@ -233,7 +233,7 @@ header {
 @media (min-width: 600px) {
     .intro {
         display: grid;
-        width: min-content;
+        width:min-content;
         margin: 0 auto;
         grid-column-gap: 1em;
         grid-template-areas: 
