@@ -473,11 +473,14 @@ ul{
     }
     .timeline-block-right {
        float: none;
+       direction:ltr;
+       
     }
  
     .timeline-block-left {
-       float: none;
-       direction: ltr;
+       float:none;
+       direction:ltr;
+       
     }
  }
  
