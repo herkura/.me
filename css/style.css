@@ -362,6 +362,7 @@ ul{
 
 .social-list {
   
+     display:flex;
     justify-content: center;
     margin: 2.5em 0;
     padding: 0;
@@ -372,7 +373,7 @@ ul{
 .social-list__item {
     margin: 0.2em;
     justify-content: center;
-    display:inline-block;
+   
     
   
 }
