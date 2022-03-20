@@ -10,3 +10,5 @@ navLinks.forEach(link => {
         document.body.classList.remove('nav-open');
     })
 })
+
+alert('For better experience view this on a desktop');
