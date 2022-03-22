@@ -66,8 +66,23 @@
                 <style>
                     a:link { text-decoration: none; }
                     .highlight {
-                        background: url(https://s2.svgbox.net/pen-brushes.svg?ic=brush-8&color=21d4c8);
+                        
+                            padding: 2px 0px 7px;
+                            position: relative;    
+                           
                     }
+                    .highlight::before
+                    {
+                    content: "";
+                    position: absolute;
+                    left: 8%;
+                    bottom:1px;
+                    width: 50px;
+                    height: 10px;
+                    transform: skew(-40deg) translateX(-20%);
+                    background-color:#16e0bd;
+                    z-index: -6;
+                }
                 </style>    
            </div>
         </section>
