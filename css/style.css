@@ -8,7 +8,7 @@
 
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-secondary:'Poppins', sans-serif;;
     
     --fw-reg: 300;
     --fw-bold: 900;
@@ -38,7 +38,7 @@
 /* General styles */
 html{
     scroll-behavior: smooth;
-}
+  }
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -46,6 +46,7 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+
 }
 
 section {
@@ -99,8 +100,9 @@ h3 { font-size: var(--fs-h3) }
 }
 .section__title--work
 {
-    color: var(--clr-accent);
+    color: var(--clr-dark);
     font-weight: var(--fw-bold);
+    font-family:var(--ff-secondary);
     margin-bottom: 1em;
 }
 
@@ -273,6 +275,7 @@ header {
 {
       color: var(--clr-accent);
       text-align: center;
+      font-family: 'Poppins', sans-serif;
 }
 .section__title--skills::after
 {
@@ -294,12 +297,12 @@ ul{
 
 .about-me
 {
-      max-width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .my-work {
-    background-color: var(--clr-dark);
+    background-color: var(--clr-light);
     color: var(--clr-light);
     text-align: center;    
 }
@@ -311,7 +314,7 @@ ul{
 
 
 .portfolio__item {
-    background: var(--clr-dark);
+    background: var(--clr-light);
     color: var(--clr-light);
     overflow: hidden;
 }
@@ -331,12 +334,12 @@ ul{
 
 /* footer*/
 .footer {
-    background: #111;
+    background:var(--clr-dark);
     color: var(--clr-accent);
     text-align: center;
-    padding: 2.5em 0;
+    padding: 1.7em 0;
     font-size: var(--fs-h3);
-    padding-right: 100px;
+    padding-right: 90px;
     padding-left: 90px;
 }
 
@@ -367,23 +370,32 @@ ul{
     justify-content: center;
     margin: 2.5em 0;
     padding: 0;
-    padding-right: 100px;
+    padding-right: 90px;
     padding-left: 90px;
 }
 
 .social-list__item {
     margin: 0.2em;
-    justify-content: center;
-   
-    
-  
+    justify-content: center;  
 }
 
 .social-list__link {
     padding: .6em;
 }
 
+.my-copyright
+{
+    font-family:var(--ff-primary);
+    font-size:medium;
 
+}
+.footer-title
+{
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    font-family:var(--ff-secondary);
+    margin-bottom: 1em;
+}
 
 
 
