@@ -310,6 +310,7 @@ ul{
 .portfolio {
     display: grid;
      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+     
 }
 
 
@@ -317,12 +318,21 @@ ul{
     background: var(--clr-light);
     color: var(--clr-light);
     overflow: hidden;
+    
 }
 
 .portfolio__img {
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
+        border: 0;
+    box-shadow: inset 0 0 0 2px #999;
+    color: #fff;
+ 
+     flex: 1;
+     flex-basis: 48%;
+     margin: .2rem;
+    
 }
 
 .portfolio__img:hover {
