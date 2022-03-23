@@ -145,7 +145,6 @@
   background-position: 0 88%;
   -webkit-transition: background-size 0.25s ease-in;
   transition: background-size 0.25s ease-in;
-  list-style: circle;
 }
 
 .underline--magical:hover {
