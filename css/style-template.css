@@ -137,4 +137,17 @@
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
+
+.underline--magical {
+  background-image: linear-gradient(120deg, #84fab0 0%, #16e0bd 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  -webkit-transition: background-size 0.25s ease-in;
+  transition: background-size 0.25s ease-in;
+}
+
+.underline--magical:hover {
+  background-size: 100% 88%;
+}
 /*# sourceMappingURL=style-template.css.map */
