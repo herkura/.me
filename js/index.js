@@ -11,7 +11,7 @@ navLinks.forEach(link => {
     })
 })
 
-alert('For better experience view this on a desktop');
+//alert('For better experience view this on a desktop');
 
 
 // // VARIABLES
