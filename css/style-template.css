@@ -241,6 +241,7 @@
   padding: 2rem 1rem;
   overflow-x: auto;
   min-width: 1000px;
+  scroll-behavior: smooth;
 }
 
 .horizontal-timeline::before {
