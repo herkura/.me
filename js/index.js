@@ -62,3 +62,58 @@ navLinks.forEach(link => {
 
 // // RESULT
 // applyGradient(gradientAPI, addBackgroundToUnderlines);
+
+// 
+
+
+async function loadMediumPosts() {
+    const feedUrl = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@hershilpiplani";
+    try {
+      const response = await fetch(feedUrl);
+      const data = await response.json();
+      const container = document.getElementById("medium-posts");
+  
+      data.items.forEach(post => {
+        // Parse the HTML in the description safely
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(post.description, "text/html");
+  
+        // Try to get the first <img> tag in the HTML
+        const imgTag = doc.querySelector("img");
+        const imageUrl = imgTag ? imgTag.src : "https://via.placeholder.com/600x300?text=No+Image";
+  
+        // Extract short snippet
+        const snippet = doc.body.textContent.slice(0, 150) + "...";
+  
+        const slide = document.createElement("div");
+        slide.className = "swiper-slide";
+        slide.innerHTML = `
+          <div class="article-card">
+            <img src="${imageUrl}" alt="Post image" class="article-image" />
+            <h3><a href="${post.link}" target="_blank">${post.title}</a></h3>
+            <p>${snippet}</p>
+            <a href="${post.link}" target="_blank" class="btn">Read more</a>
+          </div>
+        `;
+        container.appendChild(slide);
+      });
+  
+      new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: { el: ".swiper-pagination", clickable: true },
+        navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+        breakpoints: {
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 }
+        }
+      });
+  
+    } catch (err) {
+      console.error("Failed to load Medium posts", err);
+    }
+  }
+  loadMediumPosts();
+  

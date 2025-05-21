@@ -17,7 +17,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/style-template.css">
-        <link rel="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></head>
+        <link rel="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        
+    </head>
+        
+          
     <body>
         <header>
             <div class="logo"></div>
@@ -59,16 +64,16 @@
            </div>
         </section>
            <!-- Education -->
-        <section class="about-me" id = "edu">
-            <h2 class="section__title section__title--about">Education</h2>
+        <!-- <section class="about-me" id = "edu">
+            <h2 class="section__title section__title--about"><b>Education</b></h2>
             <p class="section__subtitle section__subtitle--about"></p>
             <div id="timeline">
                 <div class="tl-item">
                     <div class="tl-bg" style="background-image: url(img/sfu.png)"></div>
-                    <div class="tl-year"><p class="f2 heading--sanSerif">Present</p></div>
+                    <div class="tl-year"><p class="f2 heading--sanSerif">2025</p></div>
                   
                     <div class="tl-content">
-                     <h1>Currently pursuing Master of Science in Big Data from Simon Fraser University</h1>
+                     <h1><b>Completed my Master of Science in Big Data from Simon Fraser University</b></h1>
                     </div>
                  </div>
                 <div class="tl-item">
@@ -87,19 +92,58 @@
                   <h1>Completed my schooling from Delhi Public School, Faridabad, India</h1></div>
                 </div>
             </div>
-        </section>
+        </section> -->
+        <section class="about-me" id="edu">
+            <h2 class="section__title section__title--about"><b>Education</b></h2>
+            <p class="section__subtitle section__subtitle--about"></p>
+            <div class="horizontal-timeline">
+    
+                <div class="timeline-event">
+                  <div class="timeline-icon" style="background-image: url(img/sfu.png);"></div>
+                  <div class="timeline-date">2025</div>
+                  <div class="timeline-desc">MSc in Big Data<br>Simon Fraser University</div>
+                </div>
+            
+                <div class="timeline-event">
+                  <div class="timeline-icon" style="background-image: url(img/vit.png);"></div>
+                  <div class="timeline-date">2022</div>
+                  <div class="timeline-desc">B.Tech in CSE<br>VIT Bhopal, India</div>
+                </div>
+            
+                <div class="timeline-event">
+                  <div class="timeline-icon" style="background-image: url(img/dps.jpg);"></div>
+                  <div class="timeline-date">2018</div>
+                  <div class="timeline-desc">High School<br>DPS Faridabad, India</div>
+                </div>
+            
+              </div>
+          </section>
          
-        <section class ="my-skills" id = "skill">
+        <!-- <section class ="my-skills" id = "skill">
         <h2 class="section__title section__title--skills">Hershil's Technical Musings</h2>
-        <p class="section__subtitle"></p>
         <div id="retainable-rss-embed" data-rss="https://medium.com/feed/@hershilpiplani"
             data-maxcols="3" 
             data-layout="slider" 
-            data-poststyle="inline" 
+            data-poststyle="external" 
             data-readmore="Read the rest" 
             data-buttonclass="btn btn-primary" 
-            data-offset="-100">
-        </section>
+            data-offset="0">
+
+        </section> -->
+        <section class="my-skills" id="skill">
+            <h2 class="section__title section__title--skills">Hershil's Technical Musings</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper" id="medium-posts">
+                  <!-- JS inserts .swiper-slide here -->
+                </div>
+                <!-- Optional controls -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+          </section>
+          
+          
         <!-- My Work -->
         <section class="my-work" id = "work">
             
@@ -108,7 +152,7 @@
             
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
-                <a href="https://herkura.github.io/IMAGE-FILTER-WEBPAGE/" aria-label = "Click on the tile to get more info about the project" class="portfolio__item">
+                <a href="https://github.com/herkura/Capstone_Project_SFU" aria-label = "Click on the tile to get more info about the project" class="portfolio__item">
                     <img src="img/template1.png" alt="Play with images" class="portfolio__img">
                 </a>
                 
@@ -159,11 +203,13 @@
             </ul>
        
             <div> 
-                <p class="my-copyright">Copyright © 2024 Hershil Piplani. All Rights Reserved</p>
+                <p class="my-copyright">Copyright © 2025 Hershil Piplani. All Rights Reserved</p>
             </div>
         </footer>
      
-        <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
+        <!-- <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script> -->
         <script src="js/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
     </body>
 </html>
