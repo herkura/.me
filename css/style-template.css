@@ -234,23 +234,32 @@
 
 .horizontal-timeline {
   display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  padding: 2rem 1rem;
-  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
   position: relative;
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+  overflow-x: auto;
+  /* min-width: 400px;
+  scroll-behavior: smooth; */
+}
+
+.horizontal-timeline::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #16e0bd;
+  z-index: 1;
 }
 
 .timeline-event {
-  flex: 0 0 auto;
-  scroll-snap-align: start;
-  background: #f5f5f5;
-  border-radius: 10px;
-  padding: 1rem;
-  min-width: 250px;
+  position: relative;
+  flex: 0 0 200px;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 2;
 }
 
 .timeline-icon {
@@ -258,17 +267,21 @@
   height: 60px;
   background-size: cover;
   background-position: center;
-  margin: 0 auto 1rem auto;
   border-radius: 50%;
-  border: 2px solid #16e0bd;
+  margin: 0 auto;
+  border: 4px solid white;
+  box-shadow: 0 0 0 4px #16e0bd;
+  background-color: #fff;
 }
 
 .timeline-date {
+  margin-top: 1rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  color: #16e0bd;
 }
 
 .timeline-desc {
+  margin-top: 0.5rem;
   font-size: 0.95rem;
-  color: #333;
+  color: #444;
 }
